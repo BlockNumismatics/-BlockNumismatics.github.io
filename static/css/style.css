@@ -1,0 +1,115 @@
+
+@font-face {
+    font-family: 'Origami Mommy';
+    src: url('../fonts/origa___.ttf');
+}
+
+@font-face {
+		font-family: 'Computer Modern Concrete Bold';
+		src: url('../fonts/cmu.concrete-bold.ttf');
+}
+
+body {
+		background: url(../images/background.png) no-repeat center fixed;
+		background-size: cover;
+		color: white;
+		text-align: center;
+		font-size: 1em;
+		box-sizing: border-box;
+		font-family: 'Computer Modern Concrete Bold';
+}
+
+a {
+    color:#00fe00;
+    text-decoration: none;
+    border-bottom: 1px solid #f0a000;
+    cursor: pointer;
+}
+
+a:hover {
+    color:#f0a000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1, h2 {
+    color:#00fe00;
+}
+
+p {
+    font-weight:600;
+}
+
+/** Simulate linebreaks between paragraphs **/
+p + p {
+		margin-top: 1.5em;
+}
+
+/** discs look bad when text is center-aligned **/
+body ul {
+		list-style-type: none;
+}
+
+/** smarter sublist spacing in main where links be **/
+
+main li + li {
+		margin-top: 0.3em;
+}
+
+main li + ul {
+		margin-top: 0.4em;
+}
+
+main ul + li {
+		margin-top: 0.3em;
+}
+
+/** default content box properties **/
+
+main{
+    display: inline-block;
+		padding: 20px;
+		margin: 10vw;
+		margin-top: 5%;
+		margin-bottom: 2%;
+		background-color: rgba(0,0,0,0.7);
+		overflow: auto;
+		border-style:solid;
+		border-color:#00fe00 transparent;
+		border-left-width: 20px;
+		border-right-width: 20px;
+		text-align: left;
+}
+
+tbody {
+		font-family: 'Origami Mommy';
+}
+
+/** used by the title/heading box **/
+nav header {
+		display: inline-block;
+		text-align: center;
+		margin: 30 vw;
+		padding: 20px;
+		background-color: rgba(0,0,0,0.95);
+		overflow: auto;
+}
+
+nav {
+		margin-top:none;
+		padding: 20px;
+		font-family: 'Origami Mommy';
+}
+
+nav ul {
+		display: inline-block;
+}
+
+nav br {
+		margin-bottom:1em;
+}
+
+nav li + li {
+		margin-left: 2em;
+		margin-right: 2em;
+}
